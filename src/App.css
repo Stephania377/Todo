@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+   background-color: rgb(179,139,109);
+   color: white;
+   font-family: "Poppins", sans serif;
+   min-height:100vh;
+}
+
+header {
+  font-size: 1.8rem;
+}
+
+header, form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none;
+  border: 0 !important;
+  background-image: none;
+}
+
+form  input, form button {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  background: white;
+} 
+form button {
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor:  pointer;
+  transition: all 0.3s ease;
+}
+
+.complete-btn, .trash-btn, .edit-btn{
+  color:white;
+  float:right;
+  width:30px;
+  height:30px;
+}
+form button:hover {
+  background: #ff6f47;
+  color: white;
+}
+
+
+.droite{
+  float:left;
+  margin-left:10px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo{
+  margin: 0.5rem;
+  background: white;
+  font-size: 1.3rem;
+  color:  black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.filter-todo{
+  padding: 1rem;
+}
+
+.todo  li {
+  flex: 1;
+
+}
+
+.complete-btn {
+  background: rgb(11,212,162);
+}
+.complete-btn:hover {
+  background: #f5f5f5;
+  color:rgb(11,212,162);
+}
+.trash-btn{
+  background:#ff6f47;
+}
+.trash-btn:hover{
+  background:#f5f5f5;
+  color:#ff6f47;
+}
+.edit-btn{
+  background:#1E90FF;
+}
+.edit-btn:hover{
+  background:#f5f5f5;
+  color:#1E90FF;
+}
+
+.todo-item {
+
+}
+
+.fa-trash, .fa-check {
+  pointer-events: none;
+}
+.select{
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.fall{
+  transform: translateY(10rem) rotateZ(20deg);
+  opacity:0;
+
+  
+}
+.select::after{
+  content: "\25BC";
+  position: absolute;
+  top:0;
+  right:0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+
+
+.completed{
+ text-decoration:line-through;
+  opacity : 0.5;
+}
